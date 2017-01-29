@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jenkins:
+    container_name: jenkins
+    restart: always
+    image: 'jenkins'
+    ports:
+      - "8181:8080"
+      - "50000:50000"
+    volumes:
+      - /jenkins/data:/var/jenkins_home
