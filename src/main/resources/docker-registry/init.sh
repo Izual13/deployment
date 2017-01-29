@@ -11,7 +11,7 @@ cp /certs/domain.crt /etc/docker/certs.d/${host}/ca.crt
 chmod -R 700 /etc/docker/certs.d/${host}
 cd /etc/docker/certs.d/${host}
 ls -l /etc/docker/certs.d/${host}
-htpasswd -bc /registry/auth/htpasswd user password
+htpasswd -bc /registry/auth/htpasswd ${user} ${password}
 
 chcon -Rt svirt_sandbox_file_t /certs/
 chcon -Rt svirt_sandbox_file_t /registry/data
