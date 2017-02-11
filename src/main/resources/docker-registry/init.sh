@@ -17,3 +17,4 @@ chcon -Rt svirt_sandbox_file_t /certs/
 chcon -Rt svirt_sandbox_file_t /registry/data
 chcon -Rt svirt_sandbox_file_t /registry/auth
 
+service docker start
